@@ -1,0 +1,136 @@
+/* variables */
+:root {
+  --color-primary: #f74780;
+  --color-primary-shade: #ffa7c3;
+  --color-black: #13183f;
+  --color-white: #ffffff;
+  --color-grey: #83869a;
+  --color-blue: #666ca3;
+  --color-orange: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --color-orange-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --color-purple: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  --color-purple-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+/* resets */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Typography */
+.heading-xl,
+.heading-s,
+.heading-l,
+.heading-m {
+  font-weight: 800;
+  color: var(--color-black);
+}
+.heading-xl {
+  font-size: 5.6rem;
+  line-height: 7rem;
+}
+
+.heading-l {
+  font-size: 4rem;
+  line-height: 7rem;
+}
+
+.heading-m {
+  font-size: 3.2rem;
+  line-height: 7rem;
+}
+
+.heading-s {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.body-m {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.body-s {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+/* Buttons */
+.btn,
+.btn:link,
+.btn:visited {
+  border-radius: 100px;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+
+  padding: 1.4rem 3.2rem;
+}
+
+.btn--black,
+.btn--black:link,
+.btn--black:visited {
+  background: var(--color-black);
+}
+
+.btn--black:hover,
+.btn--black:active {
+  background: var(--color-blue);
+}
+.btn--orange,
+.btn--orange:link,
+.btn--orange:visited {
+  background: var(--color-orange);
+}
+.btn--orange:hover,
+.btn--orange:active {
+  background: var(--color-orange-hover);
+}
+.btn--purple,
+.btn--purple:link,
+.btn--purple:visited {
+  background: var(--color-purple);
+}
+
+.btn--purple:hover,
+.btn--purple:active {
+  background: var(--color-purple-hover);
+}
